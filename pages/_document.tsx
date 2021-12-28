@@ -12,7 +12,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* https://web.dev/preload-optional-fonts/?utm_source=lighthouse&utm_medium=devtools */}
           {fontFiles.map((file) => (
             <link as="font" crossOrigin="anonymous" href={file} key={file} rel="preload" />
           ))}
