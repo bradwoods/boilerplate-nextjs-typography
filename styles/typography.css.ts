@@ -112,4 +112,4 @@ export const fontWeights = {
   [Id.inter]: InterFontWeights,
 };
 
-export const fontFiles = Object.values(fonts).flatMap((font) => Object.values(font.files).flatMap((file) => file));
+export const fontFiles = Object.values(fonts).flatMap((font) => Object.values(font.files));
