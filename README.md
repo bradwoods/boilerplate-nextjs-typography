@@ -1,4 +1,4 @@
-# Boilerplate: Next.js + vanilla-extract + Capsize
+# Boilerplate: Next.js Typography
 
 See [garden note](https://garden.bradwoods.io/notes/boilerplate-nextjs-typography) for more details.
 
