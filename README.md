@@ -18,4 +18,4 @@ npm run dev
 
 ## 🛡️ License
 
-This project is licensed under the MIT
+This project is licensed under the MIT.
