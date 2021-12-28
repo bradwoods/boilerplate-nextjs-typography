@@ -35,10 +35,7 @@ export const fonts: Fonts = {
       variable: `${FONT_DIR}/Inter-VariableFont_slnt,wght.ttf`,
     },
     format: `truetype`,
-    metrics: {
-      ...interFontMetrics,
-      descent: -890, // this moved the box up
-    },
+    metrics: interFontMetrics,
     name: `Inter`,
     weights: {
       variable: `100 900`,
