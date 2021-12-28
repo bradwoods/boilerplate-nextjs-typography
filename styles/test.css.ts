@@ -20,5 +20,6 @@ export const boldText = style([
   fontStyles.interM,
   {
     fontVariationSettings: `"wght" ${fontWeights.inter.bold}`,
+    color: `red`,
   },
 ]);
