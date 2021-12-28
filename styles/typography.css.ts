@@ -46,8 +46,6 @@ export const fonts: Fonts = {
 // https://type-scale.com
 // Major Third
 // base: 16
-// I don't like abstracting numbers to letter here but don't see an alternative as enums don't support numeric members
-// The pros of an enum outweight the cons of added complexity
 export enum TypeScale {
   s = 12.8,
   m = 16,
