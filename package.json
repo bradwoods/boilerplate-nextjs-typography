@@ -1,6 +1,7 @@
 {
   "name": "my-next-app",
-  "private": true,
+  "author": "Brad Woods <brad@bradwoods.io>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
