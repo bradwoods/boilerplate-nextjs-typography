@@ -103,7 +103,8 @@ export const fontStyles: Record<StyleId, string> = {
 };
 
 enum InterWeights {
-  regular = 400,
+  normal = 400,
+  medium = 600,
   semiBold = 600,
   bold = 700,
 }
