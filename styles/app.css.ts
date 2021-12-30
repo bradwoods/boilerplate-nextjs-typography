@@ -2,7 +2,7 @@ import { globalFontFace, globalStyle } from "@vanilla-extract/css";
 import { fonts } from "./typography.css";
 
 globalFontFace(`"${fonts.inter.name}"`, {
-  fontDisplay: `swap`,
+  fontDisplay: `optional`,
   fontStyle: `normal`,
   fontWeight: fonts.inter.weights.variable,
   src: `url("${fonts.inter.files.variable}") format("${fonts.inter.format}")`,
