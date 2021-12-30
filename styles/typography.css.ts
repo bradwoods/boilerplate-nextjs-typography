@@ -46,7 +46,7 @@ export const fonts: Fonts = {
 // https://type-scale.com
 // Major Third
 // base: 16
-export enum TypeScale {
+enum TypeScale {
   s = 12.8,
   m = 16,
   l = 20,
