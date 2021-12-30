@@ -102,14 +102,14 @@ export const fontStyles: Record<StyleId, string> = {
   }),
 };
 
-export enum InterFontWeights {
+enum InterWeights {
   regular = 400,
   semiBold = 600,
   bold = 700,
 }
 
 export const fontWeights = {
-  [Id.inter]: InterFontWeights,
+  [Id.inter]: InterWeights,
 };
 
 export const fontFiles = Object.values(fonts).flatMap((font) => Object.values(font.files));
