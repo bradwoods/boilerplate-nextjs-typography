@@ -1,4 +1,4 @@
-import { FontMetrics } from "@capsizecss/core/dist/declarations/src/types";
+import { FontMetrics } from "@capsizecss/core";
 import interFontMetrics from "@capsizecss/metrics/inter";
 import { createTextStyle } from "@capsizecss/vanilla-extract";
 import { style } from "@vanilla-extract/css";
