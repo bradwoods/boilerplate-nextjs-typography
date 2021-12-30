@@ -104,7 +104,7 @@ export const fontStyles: Record<StyleId, string> = {
 
 enum InterWeights {
   normal = 400,
-  medium = 600,
+  medium = 500,
   semiBold = 600,
   bold = 700,
 }
