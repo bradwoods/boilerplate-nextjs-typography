@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { fontStyles, fontWeights } from "./typography.css";
+import { fontStyles, fonts } from "./typography.css";
 
 export const layout = style({
   padding: `16px`,
@@ -20,7 +20,7 @@ export const h1 = fontStyles.interXL;
 export const boldText = style([
   fontStyles.interM,
   {
-    fontVariationSettings: `"wght" ${fontWeights.inter.bold}`,
+    fontVariationSettings: `"wght" ${fonts.inter.weights.bold}`,
     color: `red`,
   },
 ]);

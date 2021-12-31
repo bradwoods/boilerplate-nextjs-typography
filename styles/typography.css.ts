@@ -6,17 +6,17 @@ import { style } from "@vanilla-extract/css";
 interface Meta {
   fallback: string;
   files: {
-    bold?: string;
-    regular?: string;
     variable?: string;
+    normal?: string;
+    bold?: string;
   };
   format: string;
   metrics: FontMetrics;
   name: string;
   weights: {
-    bold?: number;
-    regular?: number;
     variable?: string;
+    normal?: number;
+    bold?: number;
   };
 }
 
@@ -34,11 +34,13 @@ export const fonts: Fonts = {
     files: {
       variable: `${FONT_DIR}/Inter-VariableFont_slnt,wght.ttf`,
     },
-    format: `truetype`,
+    format: `truetype-variations`,
     metrics: interFontMetrics,
     name: `Inter`,
     weights: {
       variable: `100 900`,
+      normal: 400,
+      bold: 700,
     },
   },
 };
@@ -100,17 +102,6 @@ export const fontStyles: Record<StyleId, string> = {
     leading: 32,
     size: TypeScale.xl,
   }),
-};
-
-enum InterWeights {
-  normal = 400,
-  medium = 500,
-  semiBold = 600,
-  bold = 700,
-}
-
-export const fontWeights = {
-  [Id.inter]: InterWeights,
 };
 
 export const fontFiles = Object.values(fonts).flatMap((font) => Object.values(font.files));
