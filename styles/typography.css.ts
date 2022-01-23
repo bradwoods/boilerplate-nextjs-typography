@@ -20,16 +20,14 @@ interface Meta {
   };
 }
 
-enum Id {
-  inter = "inter",
-}
+type FontFamilyId = "INTER";
 
-type Fonts = Record<Id, Meta>;
+type Fonts = Record<FontFamilyId, Meta>;
 
 const FONT_DIR = `/fonts`;
 
 export const fonts: Fonts = {
-  [Id.inter]: {
+  INTER: {
     fallback: `sans-serif`,
     files: {
       variable: `${FONT_DIR}/Inter-VariableFont_slnt,wght.ttf`,
@@ -48,15 +46,15 @@ export const fonts: Fonts = {
 // https://type-scale.com
 // Major Third
 // base: 16
-enum TypeScale {
-  s = 12.8,
-  m = 16,
-  l = 20,
-  xl = 25,
-}
+const typeScale = {
+  s: 12.8,
+  m: 16,
+  l: 20,
+  xl: 25,
+};
 
 interface Props {
-  id: Id;
+  id: FontFamilyId;
   leading: number;
   size: number;
 }
@@ -74,33 +72,28 @@ function calcFontCss({ id, leading, size }: Props) {
   ]);
 }
 
-enum StyleId {
-  interS = "interS",
-  interM = "interM",
-  interL = "interL",
-  interXL = "interXL",
-}
+type StyleId = "INTER_SMALL" | "INTER_MED" | "INTER_LARGE" | "INTER_XLARGE";
 
 export const fontStyles: Record<StyleId, string> = {
-  [StyleId.interS]: calcFontCss({
-    id: Id.inter,
+  INTER_SMALL: calcFontCss({
+    id: "INTER",
     leading: 16.5,
-    size: TypeScale.s,
+    size: typeScale.s,
   }),
-  [StyleId.interM]: calcFontCss({
-    id: Id.inter,
+  INTER_MED: calcFontCss({
+    id: "INTER",
     leading: 21,
-    size: TypeScale.m,
+    size: typeScale.m,
   }),
-  [StyleId.interL]: calcFontCss({
-    id: Id.inter,
+  INTER_LARGE: calcFontCss({
+    id: "INTER",
     leading: 25,
-    size: TypeScale.l,
+    size: typeScale.l,
   }),
-  [StyleId.interXL]: calcFontCss({
-    id: Id.inter,
+  INTER_XLARGE: calcFontCss({
+    id: "INTER",
     leading: 32,
-    size: TypeScale.xl,
+    size: typeScale.xl,
   }),
 };
 

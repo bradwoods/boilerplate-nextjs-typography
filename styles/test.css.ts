@@ -9,18 +9,18 @@ export const layout = style({
   gap: `16px`,
 });
 
-export const label = fontStyles.interS;
+export const label = fontStyles.INTER_SMALL;
 
-export const p = fontStyles.interM;
+export const p = fontStyles.INTER_MED;
 
-export const h2 = fontStyles.interL;
+export const h2 = fontStyles.INTER_LARGE;
 
-export const h1 = fontStyles.interXL;
+export const h1 = fontStyles.INTER_XLARGE;
 
 export const boldText = style([
-  fontStyles.interM,
+  fontStyles.INTER_MED,
   {
-    fontVariationSettings: `"wght" ${fonts.inter.weights.bold}`,
+    fontVariationSettings: `"wght" ${fonts.INTER.weights.bold}`,
     color: `red`,
   },
 ]);

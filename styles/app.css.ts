@@ -1,11 +1,11 @@
 import { globalFontFace, globalStyle } from "@vanilla-extract/css";
 import { fonts } from "./typography.css";
 
-globalFontFace(`"${fonts.inter.name}"`, {
+globalFontFace(`"${fonts.INTER.name}"`, {
   fontDisplay: `optional`,
   fontStyle: `normal`,
-  fontWeight: fonts.inter.weights.variable,
-  src: `url("${fonts.inter.files.variable}") format("${fonts.inter.format}")`,
+  fontWeight: fonts.INTER.weights.variable,
+  src: `url("${fonts.INTER.files.variable}") format("${fonts.INTER.format}")`,
 });
 
 globalStyle("*, *::before, *::after", {
